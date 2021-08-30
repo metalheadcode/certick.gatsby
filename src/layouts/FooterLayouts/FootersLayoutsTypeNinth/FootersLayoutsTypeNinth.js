@@ -4,10 +4,12 @@ import { Nav, Navbar } from "react-bootstrap"
 import Badge from "../../../components/Badges/Badges"
 import * as classes from "./FootersLayoutsTypeNinth.module.css"
 import { Fade } from "react-awesome-reveal"
+import { useTheme } from "../../../context/context"
 
 function FootersLayoutsTypeNinth(props) {
+  const [isDark] = useTheme()
   return (
-    <div className={`${classes.footer} ${props.dark && "dark"}`}>
+    <div className={`${classes.footer} ${isDark && "dark"}`}>
       <div className={classes.gridWrapper}>
         <Container>
           <Row>

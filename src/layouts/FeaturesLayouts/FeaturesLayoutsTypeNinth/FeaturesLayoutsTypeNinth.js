@@ -12,13 +12,12 @@ const description =
 const moreDescription =
   "Firstly, Certick disrupts social norm from issuing physical certificate to digital certificate with a unique trackable QR code to verify the genuineness. Printing, storing and issuing physical copies can be avoided and hence reducing the carbon footprints and bringing more awareness for environmentally conscious society. Secondly, Certick as a consolidated platform allows managing of events/activities, handling participants and their attendance, issuing certificates to be done seamlessly without multiple different system and physical filing.Thirdly, Certick allows End-users to easily access and enroll in their interested events/activity without repetitive information filling. Besides, they can also receive and manage their e-certificates tie to their Certick account via mobile App."
 
-function FeaturesLayoutsTypeNinth(props) {
+function FeaturesLayoutsTypeNinth({ dark }) {
   const [readMore, setReadMore] = useState(false)
-  console.log(readMore)
   return (
     <React.Fragment>
       <section
-        className={`section ${classes.features} ${props.dark && "dark"}`}
+        className={`section ${classes.features} ${dark && "dark"}`}
         id="why"
       >
         <div className={classes.gridWrapper}>

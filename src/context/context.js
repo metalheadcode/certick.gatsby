@@ -1,14 +1,16 @@
 import React from "react"
-import { createContext, useContextSelector } from "use-context-selector"
 
-const ThemeContext = createContext()
+const ThemeContext = React.createContext()
 
-export const ThemeProvider = ({ children, theme }) => {
+export const ThemeProvider = ({ children }) => {
+  const [isDark, setIsDark] = React.useState(false)
   return (
     <>
-      <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+      <ThemeContext.Provider value={[isDark, setIsDark]}>
+        {children}
+      </ThemeContext.Provider>
     </>
   )
 }
 
-export const useTheme = selector => useContextSelector(ThemeContext)
+export const useTheme = () => React.useContext(ThemeContext)

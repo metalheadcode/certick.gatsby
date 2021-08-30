@@ -1,9 +1,9 @@
-.transparentNavbar {
+.transparentNavbar,
+.darkNavbar {
   z-index: 100;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
   padding: 10px 0;
 
   /* shadow  */
@@ -12,14 +12,25 @@
   -moz-box-shadow: 1px 1px 32px 0px rgba(0, 0, 0, 0.1);
 }
 
+.transparentNavbar {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(100px);
+}
+.darkNavbar {
+  background: rgba(#1c275a, 0.5);
+  backdrop-filter: blur(100px);
+}
+
 .header a {
   color: black;
 }
 
 .mangkuk {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: auto auto;
-  grid-gap: 10px;
+  gap: 20px;
 }
 
 .header div[class*="navbar-nav"] a[class*="nav-link"] {

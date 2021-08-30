@@ -5,22 +5,23 @@ import Button from "../../components/Button/Button.js"
 import { AppLogo } from "../../components/Icons/Icons"
 import { Container } from "reactstrap"
 import { useTheme } from "../../context/context"
+import BaseSwitch from "../../components/Base-Switcher/Base-Switcher"
 
-const Header = props => {
-  const value = useTheme()
-  console.log("Theme", value)
+const Header = () => {
+  const [dark] = useTheme()
+
   return (
-    <section
-      className={`${classes.header} ${
-        props.dark ? `dark ${classes.dark}` : ""
-      }`}
-    >
-      <div className={classes.transparentNavbar}>
+    <div className={`${classes.header} ${dark ? `dark ${classes.dark}` : ""}`}>
+      <div
+        className={
+          dark ? `${classes.darkNavbar}` : `${classes.transparentNavbar}`
+        }
+      >
         <Container>
           <Navbar collapseOnSelect expand="lg" className="p-0">
             <div className={classes.wrapper}>
               <Navbar.Brand href="/">
-                <AppLogo />
+                <AppLogo dark={dark} />
               </Navbar.Brand>
 
               <Navbar.Toggle
@@ -47,6 +48,7 @@ const Header = props => {
                 </Nav.Link>
               </Nav>
               <div className={classes.mangkuk}>
+                <BaseSwitch dark={true} />
                 <Button
                   link={true}
                   target={""}
@@ -61,7 +63,7 @@ const Header = props => {
           </Navbar>
         </Container>
       </div>
-    </section>
+    </div>
   )
 }
 

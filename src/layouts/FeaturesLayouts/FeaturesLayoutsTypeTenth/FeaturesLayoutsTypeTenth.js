@@ -7,10 +7,10 @@ import * as classes from "./FeaturesLayoutsTypeTenth.module.css"
 
 const title = "What Certick Provides?"
 
-function FeaturesLayoutsTypeTenth(props) {
+function FeaturesLayoutsTypeTenth({ dark }) {
   return (
-    <React.Fragment>
-      <section id="what" className={`section ${props.dark && "dark"}`}>
+    <>
+      <section id="what" className={`section ${dark && "dark"}`}>
         <div className={classes.gridWrapper}>
           <Container>
             <Row>
@@ -27,7 +27,7 @@ function FeaturesLayoutsTypeTenth(props) {
           </Container>
         </div>
       </section>
-    </React.Fragment>
+    </>
   )
 }
 export default FeaturesLayoutsTypeTenth

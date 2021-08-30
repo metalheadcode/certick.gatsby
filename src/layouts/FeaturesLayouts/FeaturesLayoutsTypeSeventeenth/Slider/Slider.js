@@ -32,7 +32,7 @@ const Slider = props => {
   return (
     <div>
       <div className={classes.swiperContainer}>
-        <div className={`swiper-wrapper ${classes.swiperWrapper}`}>
+        <div className="swiper-wrapper">
           {props.array.map((el, index) => {
             return (
               <div

@@ -28,7 +28,7 @@ const CTATypeFirst = props => {
             outsider={true}
             link={false}
             target={"_blank"}
-            to="https://csr.neuon.ai/user/user_login.php"
+            to="https://csr.neuon.ai/organization/org_login.php"
             type={"submit"}
             classes={"primary large simple w-100"}
             value={"Organizer"}
@@ -39,7 +39,7 @@ const CTATypeFirst = props => {
             outsider={true}
             link={false}
             target={"_blank"}
-            to="https://csr.neuon.ai/user/user_login.php"
+            to="https://csr.neuon.ai/userv2/user_login.php"
             type={"submit"}
             classes={"secondary large simple w-100"}
             value={"User"}

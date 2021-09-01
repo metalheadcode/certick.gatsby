@@ -63,7 +63,10 @@
     margin-top: -20px;
   }
   .dashboardImage {
-    width: 622px;
-    height: 385px;
+    width: 100%;
+  }
+  .rightColumn {
+    margin-top: 60px;
+    padding-bottom: 0;
   }
 }

@@ -41,6 +41,19 @@ class Button extends Component {
             <span>{this.props.value}</span>
             {this.props.rightIcon}
           </Link>
+        ) : this.props.outsider === true ? (
+          <a
+            target={this.props.target}
+            rel="noreferrer"
+            href={this.props.to}
+            className={`Button ${this.props.classes} ${this.props.size}`}
+            onClick={this.props.onClick}
+            style={{ borderRadius: `${this.props.radius}` }}
+          >
+            {this.props.leftIcon}
+            <span>{this.props.value}</span>
+            {this.props.rightIcon}
+          </a>
         ) : (
           <button
             className={`Button ${this.props.classes} ${this.props.size}`}

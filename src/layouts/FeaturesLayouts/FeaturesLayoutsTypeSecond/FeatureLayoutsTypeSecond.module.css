@@ -59,6 +59,9 @@
   .leftColumn {
     text-align: center !important;
   }
+  .button {
+    margin: auto;
+  }
   .rightColumn {
     margin-top: -20px;
   }

@@ -10,7 +10,7 @@ const description =
   "We feel so grateful with customer trust, and one them now is our shareholder."
 function CTALayoutsTypeTwelve(props) {
   return (
-    <React.Fragment>
+    <>
       <section
         className={`section ${props.dark ? `dark ${classes.dark}` : ""}`}
       >
@@ -58,7 +58,7 @@ function CTALayoutsTypeTwelve(props) {
           </Container>
         </div>
       </section>
-    </React.Fragment>
+    </>
   )
 }
 export default CTALayoutsTypeTwelve

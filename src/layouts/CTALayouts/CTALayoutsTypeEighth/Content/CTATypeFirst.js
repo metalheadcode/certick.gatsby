@@ -25,9 +25,10 @@ const CTATypeFirst = props => {
       <div className={classes.buttonRow}>
         <Fade top delay={150} triggerOnce={true}>
           <Button
-            link={true}
+            outsider={true}
+            link={false}
             target={"_blank"}
-            to="https://csr.neuon.ai/organization/org_login.php"
+            to="https://csr.neuon.ai/user/user_login.php"
             type={"submit"}
             classes={"primary large simple w-100"}
             value={"Organizer"}
@@ -35,7 +36,8 @@ const CTATypeFirst = props => {
         </Fade>
         <Fade top delay={200} triggerOnce={true}>
           <Button
-            link={true}
+            outsider={true}
+            link={false}
             target={"_blank"}
             to="https://csr.neuon.ai/user/user_login.php"
             type={"submit"}

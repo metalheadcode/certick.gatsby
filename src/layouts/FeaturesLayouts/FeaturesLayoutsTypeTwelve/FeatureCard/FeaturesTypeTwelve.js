@@ -6,7 +6,7 @@ import * as classes from "./FeaturesTypeTwelve.module.css"
 
 const FeaturesTypeTwelve = props => {
   return (
-    <div className={`${classes.feature}  ${props.dark && "dark"}`}>
+    <div className={`${classes.feature}  ${props.dark && classes.dark}`}>
       <div className={classes.wrapper}>
         <Row>
           <Col className={`col-12 ${classes.topLevel}`}>

@@ -5,10 +5,14 @@
 .wrapper {
   padding: 40px;
   padding-bottom: 45px;
-
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
+
+.dark .wrapper {
+  background-color: #0c1431;
+}
+
 .description {
   padding-top: 16px;
 }
@@ -22,9 +26,6 @@
 }
 .feature > div > div:nth-last-child(1) > div > div:nth-last-child(1) {
   margin-bottom: 0;
-}
-.dark .wrapper {
-  background-color: #0c1431;
 }
 @media screen and (max-width: 768px) {
   .wrapper {

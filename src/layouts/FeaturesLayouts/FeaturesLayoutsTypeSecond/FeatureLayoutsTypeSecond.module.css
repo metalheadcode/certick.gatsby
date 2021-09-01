@@ -48,9 +48,6 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .features {
-    margin-bottom: 60px;
-  }
   .features h1 {
     max-width: 320px;
     padding-right: 0;
@@ -67,6 +64,7 @@
   }
   .rightColumn {
     margin-top: 60px;
+    margin-bottom: 30px;
     padding-bottom: 0;
   }
 }

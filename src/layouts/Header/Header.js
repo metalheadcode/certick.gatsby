@@ -40,11 +40,9 @@ const Header = () => {
                 <Nav.Link eventKey="3" href="/#what">
                   What
                 </Nav.Link>
-                <Nav eventKey="4">
-                  <a href="https://wa.me/60146884403?text=I'm%20interested%20to%20talk%20more%20about%20Certick.">
-                    Contact
-                  </a>
-                </Nav>
+                <Nav.Link eventKey="3" href="/#contact">
+                  Contact
+                </Nav.Link>
               </Nav>
               <div className={classes.mangkuk}>
                 <BaseSwitch dark={true} />

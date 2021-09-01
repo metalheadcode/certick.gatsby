@@ -12,6 +12,7 @@ function CTALayoutsTypeTwelve(props) {
   return (
     <>
       <section
+        id="contact"
         className={`section ${props.dark ? `dark ${classes.dark}` : ""}`}
       >
         <div className={classes.gridWrapper}>

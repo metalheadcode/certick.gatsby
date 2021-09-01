@@ -20,7 +20,7 @@ const Header = () => {
         <Container>
           <Navbar collapseOnSelect expand="lg" className="p-0">
             <div className={classes.wrapper}>
-              <Navbar.Brand href="/">
+              <Navbar.Brand href="/" aria-label="Certick">
                 <AppLogo dark={dark} />
               </Navbar.Brand>
 

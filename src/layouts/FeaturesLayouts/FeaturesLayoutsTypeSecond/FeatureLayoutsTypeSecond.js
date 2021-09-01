@@ -35,7 +35,7 @@ const FeaturesLayoutsTypeSecond = ({ dark }) => {
                 <Button
                   link={true}
                   to="/login-page"
-                  classes={`secondary mt-3 large simple ${classes.button}`}
+                  classes={`primary mt-3 large simple ${classes.button}`}
                   value={"Join Now"}
                 />
               </Col>

@@ -1,20 +1,24 @@
 import { Row, Col, Container } from "reactstrap"
 import "bootstrap/dist/css/bootstrap.css"
-
 import React, { Component } from "react"
 import "antd/dist/antd.css"
-
-import { Email, Group } from "../../../components/Icons/Icons"
 import Oval from "../../../components/Frame/Frame"
 import Feature from "./Feature/FeatureTypeFourth"
 import Slider from "./Slider/Slider"
 import Button from "../../../components/Button/Button"
 import { Fade } from "react-awesome-reveal"
 import * as classes from "./FeaturesLayoutsTypeSeventeenth.module.css"
+import {
+  Admin,
+  Bucks,
+  Cert,
+  Data,
+  Flexible,
+  Search,
+} from "../../../components/Icons/Certick-Icon"
 
 const title = "Certick Key Features"
-const description =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis"
+const description = ""
 
 class FeaturesLayoutsTypeSeventeenth extends Component {
   state = {
@@ -23,34 +27,34 @@ class FeaturesLayoutsTypeSeventeenth extends Component {
         title: "Flexible",
         description:
           "Allow IEM to upload the template of their  cetificate for different programes",
-        icon: <Email fill="#ffffff" />,
+        icon: <Flexible fill="#ffffff" />,
       },
       {
         title: "Bulk",
         description:
           "Able import member’s information in bulk and generate certificate.",
-        icon: <Group fill="#ffffff" />,
+        icon: <Bucks fill="#ffffff" />,
       },
       {
         title: "Retrieve & Search",
         description:
           "Able to manage (retrieve and search) participant’s certificates.",
-        icon: <Email fill="#ffffff" />,
+        icon: <Search fill="#ffffff" />,
       },
       {
         title: "Participants Recorder",
         description: "Manage/record participant’s attendance on the events.",
-        icon: <Email fill="#ffffff" />,
+        icon: <Data fill="#ffffff" />,
       },
       {
         title: "Send In Bulk",
         description: "Send e-certificates to participants in bulk via email.",
-        icon: <Group fill="#ffffff" />,
+        icon: <Cert fill="#ffffff" />,
       },
       {
         title: "Admin To Website",
         description: "WCS shall be connected to IEM Sarawak website",
-        icon: <Email fill="#ffffff" />,
+        icon: <Admin fill="#ffffff" />,
       },
     ],
   }
@@ -109,7 +113,7 @@ class FeaturesLayoutsTypeSeventeenth extends Component {
                 <Fade down delay={150} triggerOnce={true}>
                   <Button
                     link={true}
-                    href={"#"}
+                    to={"/login-page"}
                     classes={`primary large simple ${classes.button}`}
                     value={"Get Started"}
                   />

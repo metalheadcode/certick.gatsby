@@ -4,8 +4,11 @@ import Feature from "../Feature/FeaturesTypeEighth"
 import Oval from "../../../../components/Frame/Frame"
 import { Fade } from "react-awesome-reveal"
 import * as classes from "./Features.module.css"
-
-import { Email } from "../../../../components/Icons/Icons"
+import {
+  Cloud,
+  Monitor,
+  ScanQR,
+} from "../../../../components/Icons/Certick-Icon"
 
 const Features = props => {
   return (
@@ -20,7 +23,7 @@ const Features = props => {
               }
             >
               <Oval variant={"large"}>
-                <Email />
+                <Monitor />
               </Oval>
             </Feature>
           </Fade>
@@ -34,7 +37,7 @@ const Features = props => {
               }
             >
               <Oval variant={"large"}>
-                <Email />
+                <Cloud />
               </Oval>
             </Feature>
           </Fade>
@@ -48,7 +51,7 @@ const Features = props => {
               }
             >
               <Oval variant={"large"}>
-                <Email />
+                <ScanQR />
               </Oval>
             </Feature>
           </Fade>

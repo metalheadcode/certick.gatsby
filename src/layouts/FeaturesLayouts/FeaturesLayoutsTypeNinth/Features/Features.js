@@ -1,33 +1,42 @@
 import React from "react"
 import { Col, Row } from "reactstrap"
 import Feature from "../Feature/FeatureTypeFourth"
-import { Bookmark, Email, Group } from "../../../../components/Icons/Icons"
 import Oval from "../../../../components/Frame/Frame"
 import { Fade } from "react-awesome-reveal"
 import * as classes from "./Features.module.css"
+import {
+  Attendance,
+  Issue,
+  Register,
+  Verify,
+} from "../../../../components/Icons/Certick-Icon"
 
 const Features = ({ dark }) => {
   const features = [
     {
       id: 1,
-      title: "Email Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et.",
-      icon: <Email />,
+      title: "Participants’ Registration",
+      description: "Register participants in bulks!",
+      icon: <Register />,
     },
     {
       id: 2,
-      title: "Team Accounts",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et.",
-      icon: <Group />,
+      title: "Attendance",
+      description: "Automatic attendance system.",
+      icon: <Issue />,
     },
     {
       id: 3,
-      title: "Property Management",
+      title: "Issue Certificate",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et.",
-      icon: <Bookmark />,
+        "Participant or Organizer able to raise any issues inside the platform.",
+      icon: <Attendance />,
+    },
+    {
+      id: 4,
+      title: "Validate",
+      description: "validate the true copy of certificate automatically.",
+      icon: <Verify />,
     },
   ]
 

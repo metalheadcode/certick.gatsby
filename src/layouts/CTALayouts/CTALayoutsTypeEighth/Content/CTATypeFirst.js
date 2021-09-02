@@ -39,7 +39,7 @@ const CTATypeFirst = props => {
             outsider={true}
             link={false}
             target={"_blank"}
-            to="https://csr.neuon.ai/userv2/user_login.php"
+            to="https://play.google.com/store/apps/details?id=ai.neuon.neuon_e_cert"
             type={"submit"}
             classes={"secondary large simple w-100"}
             value={"User"}

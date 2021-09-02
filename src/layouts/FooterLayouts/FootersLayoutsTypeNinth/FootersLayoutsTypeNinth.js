@@ -32,15 +32,19 @@ function FootersLayoutsTypeNinth(props) {
               <Fade top delay={50} triggerOnce={true}>
                 <div className={classes.mangkuk}>
                   <Badge
+                    bgColor={"black"}
+                    fontColor={"white"}
+                    target={"_blank"}
                     store={false}
-                    link="https://play.google.com/store/apps/details?id=ai.neuon.gopasar"
+                    link="https://play.google.com/store/apps/details?id=ai.neuon.neuon_e_cert"
                   />
-                  <Badge
+                  )
+                  {/* <Badge
                     store={true}
                     bgColor={"black"}
                     color={"black"}
-                    link="/ios"
-                  />
+                    link="https://play.google.com/store/apps/details?id=ai.neuon.neuon_e_cert"
+                  /> */}
                 </div>
               </Fade>
             </Col>

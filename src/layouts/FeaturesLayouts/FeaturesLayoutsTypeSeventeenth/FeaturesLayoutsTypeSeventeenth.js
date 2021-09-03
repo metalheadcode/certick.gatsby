@@ -67,7 +67,7 @@ class FeaturesLayoutsTypeSeventeenth extends Component {
       },
       {
         title: "Admin To Website",
-        description: <p>WCS shall be connected to IEM Sarawak website</p>,
+        description: <p>Connect through Ecosystem Partner platform.</p>,
         icon: <Admin fill="#ffffff" />,
       },
     ],

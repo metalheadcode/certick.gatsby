@@ -31,7 +31,7 @@ const CTATypeFirst = props => {
             to="https://csr.neuon.ai/organization/org_login.php"
             type={"submit"}
             classes={"primary large simple w-100"}
-            value={"Organizer"}
+            value={"Ecosystem Partners"}
           />
         </Fade>
         <Fade top delay={200} triggerOnce={true}>

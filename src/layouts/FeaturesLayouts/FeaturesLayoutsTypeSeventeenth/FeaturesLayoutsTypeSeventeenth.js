@@ -25,35 +25,49 @@ class FeaturesLayoutsTypeSeventeenth extends Component {
     features: [
       {
         title: "Flexible",
-        description:
-          "Allow IEM to upload the template of their  cetificate for different programes",
+        description: (
+          <p>
+            Allow Ecosystem Partners to upload the template of their cetificate
+            for different programes
+          </p>
+        ),
         icon: <Flexible fill="#ffffff" />,
       },
       {
         title: "Bulk",
-        description:
-          "Able import member’s information in bulk and generate certificate.",
+        description: (
+          <p>
+            Able import member’s information in bulk and generate certificate.
+          </p>
+        ),
         icon: <Bucks fill="#ffffff" />,
       },
       {
         title: "Retrieve & Search",
-        description:
-          "Able to manage (retrieve and search) participant’s certificates.",
+        description: (
+          <p>
+            Able to manage (retrieve and search) participant’s certificates.
+          </p>
+        ),
         icon: <Search fill="#ffffff" />,
       },
       {
         title: "Participants Recorder",
-        description: "Manage/record participant’s attendance on the events.",
+        description: (
+          <p>Manage/record participant’s attendance on the events.</p>
+        ),
         icon: <Data fill="#ffffff" />,
       },
       {
         title: "Send In Bulk",
-        description: "Send e-certificates to participants in bulk via email.",
+        description: (
+          <p>Send e-certificates to participants in bulk via email.</p>
+        ),
         icon: <Cert fill="#ffffff" />,
       },
       {
         title: "Admin To Website",
-        description: "WCS shall be connected to IEM Sarawak website",
+        description: <p>WCS shall be connected to IEM Sarawak website</p>,
         icon: <Admin fill="#ffffff" />,
       },
     ],
